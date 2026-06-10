@@ -108,6 +108,14 @@ main .committee .ccard .role{ border-radius:6px; padding:4px 10px; font-size:11p
 main .program .program_table td:last-child{ font-size:13.5px; }
 @media(max-width:600px){ footer .btn_register{ font-size:20px; padding:16px 20px; } }
 </style>
+<style>
+/* 참가신청 QR 블록 */
+.qr-block{ margin:28px auto 0; display:flex; align-items:center; justify-content:center; gap:20px; background:#fff; border:1px solid #e5e5e5; border-radius:14px; padding:20px 28px; width:fit-content; max-width:92%; box-shadow:0 8px 26px rgba(0,0,0,.18); }
+.qr-block img{ width:128px; height:128px; display:block; }
+.qr-block p{ margin:0; font-size:14.5px; color:#444 !important; line-height:1.65; text-align:left; }
+.qr-block p b{ font-size:16px; color:#222 !important; }
+@media(max-width:560px){ .qr-block{ flex-direction:column; text-align:center; } .qr-block p{ text-align:center; } }
+</style>
 </head>
 <body>
 
@@ -366,6 +374,11 @@ main .program .program_table td:last-child{ font-size:13.5px; }
           <td><p>포럼 사무국 (연락처는 추후 안내드립니다)</p></td>
         </tr>
       </table>
+
+      <div class="qr-block">
+        <img src="qr.png" alt="사전등록 QR코드">
+        <p><b>모바일 사전등록</b><br>QR코드를 스캔하면 사전등록 페이지로 연결됩니다.</p>
+      </div>
     </div>
   </section>
 </main>
