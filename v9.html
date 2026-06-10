@@ -54,18 +54,18 @@
 </style>
 <style>
 /* ===== Dark Image Theme (생성 래스터 배경 + 다크 글래스 + 가독성 수정 + 애니메이션) ===== */
-body{ background:linear-gradient(rgba(9,13,32,.80),rgba(9,13,32,.93)), url("images/gen_bg.jpg") !important; background-attachment:fixed !important; background-size:cover !important; background-position:center !important; color:#dfe4f5 !important; }
-header{ position:relative; overflow:hidden; background:linear-gradient(rgba(12,16,40,.40),rgba(11,15,38,.80)), url("images/gen_hero.jpg") !important; background-size:cover !important; background-position:center !important; }
-header::after{ content:""; position:absolute; inset:0; pointer-events:none; background:radial-gradient(40% 50% at 80% 16%, #8B9BDB33, transparent 70%); animation:hglow 9s ease-in-out infinite alternate; }
+body{ background:linear-gradient(rgba(9,13,32,.80),rgba(9,13,32,.93)), url("images/gen_grid_bg.jpg") !important; background-attachment:fixed !important; background-size:cover !important; background-position:center !important; color:#dfe4f5 !important; }
+header{ position:relative; overflow:hidden; background:linear-gradient(rgba(12,16,40,.40),rgba(11,15,38,.80)), url("images/gen_grid_hero.jpg") !important; background-size:cover !important; background-position:center !important; }
+header::after{ content:""; position:absolute; inset:0; pointer-events:none; background:radial-gradient(40% 50% at 80% 16%, #22D3EE33, transparent 70%); animation:hglow 9s ease-in-out infinite alternate; }
 header > .wrap{ position:relative; z-index:2; }
 @keyframes hglow{ to{ opacity:.5; transform:translateX(-4%);} }
 header .title h2{ color:#ffffff !important; text-shadow:0 2px 22px rgba(0,0,0,.6); }
 header .title .subcopy,header .title .subcopy2,header .info p{ text-shadow:0 1px 10px rgba(0,0,0,.7) !important; } header .title .subcopy2{ color:#cdd5ee !important; }
 main,main .about,main .outline,main .program,main .teacher,main .committee,main .partner,main .request_guide{ background:transparent !important; }
-main h3{ color:#fff !important; position:relative; text-shadow:0 1px 12px rgba(0,0,0,.45); } main h3::after{ content:""; display:block; width:48px;height:4px;background:#8B9BDB;border-radius:3px;margin:14px auto 0; }
+main h3{ color:#fff !important; position:relative; text-shadow:0 1px 12px rgba(0,0,0,.45); } main h3::after{ content:""; display:block; width:48px;height:4px;background:#22D3EE;border-radius:3px;margin:14px auto 0; }
 main .about article,main .about article p{ color:#e3e7f6 !important; } main .about article b{ color:#fff !important; }
 main .outline ul li strong{ color:#fff !important; text-shadow:0 1px 8px rgba(0,0,0,.5); } main .outline .outline_icon span{ color:#cdd5ee !important; }
-main .outline .outline_icon img{ filter:brightness(1.7) drop-shadow(0 0 5px #8B9BDB99); }
+main .outline .outline_icon img{ filter:brightness(1.7) drop-shadow(0 0 5px #22D3EE99); }
 main .outline .outline_table{ background:rgba(18,23,52,.55) !important; border-color:rgba(255,255,255,.12) !important; }
 main .outline .outline_table th{ background:rgba(33,46,110,.78) !important; color:#fff !important; border-color:rgba(255,255,255,.10) !important; }
 main .outline .outline_table td{ background:rgba(18,23,52,.55) !important; color:#e6eaf7 !important; border-color:rgba(255,255,255,.10) !important; }
@@ -77,17 +77,17 @@ main .program .program_table strong{ color:#fff !important; } main .program .pro
 main .program .wrap > table td:nth-child(2){ text-align:left !important; }
 main .teacher .thumb_teacher > strong{ color:#fff !important; text-shadow:0 1px 8px rgba(0,0,0,.65); }
 main .teacher .thumb_teacher > p{ color:#c8d0e8 !important; text-shadow:0 1px 6px rgba(0,0,0,.55); }
-main .teacher .thumb_teacher > span{ box-shadow:0 0 0 2px #8B9BDB88; }
+main .teacher .thumb_teacher > span{ box-shadow:0 0 0 2px #22D3EE88; }
 main .committee .ccard{ background:rgba(17,22,50,.64) !important; border-color:rgba(255,255,255,.13) !important; }
 main .committee .ccard .cnm{ color:#fff !important; } main .committee .ccard .cpos{ color:#c2cae3 !important; } main .committee .ccard .cdesc{ color:#cdd4e8 !important; font-size:14px !important; }
-main .committee .ccard .role, main .committee .ccard .cph.ph-init{ background:#8B9BDB !important; color:#10163A !important; } main .committee .ccard .cnm .gi{ color:#8B9BDB !important; }
+main .committee .ccard .role, main .committee .ccard .cph.ph-init{ background:#22D3EE !important; color:#042530 !important; } main .committee .ccard .cnm .gi{ color:#22D3EE !important; }
 main .partner .thumb_partner{ background:#fff !important; border-radius:10px; border-color:rgba(255,255,255,.2) !important; box-shadow:0 6px 22px rgba(0,0,0,.35); }
 main .request_guide table{ background:rgba(17,22,50,.6) !important; }
 main .request_guide th{ background:rgba(33,46,110,.78) !important; color:#fff !important; border-color:rgba(255,255,255,.1) !important; }
 main .request_guide td{ background:rgba(17,22,50,.55) !important; color:#e6eaf7 !important; border-color:rgba(255,255,255,.1) !important; }
 main .request_guide td b{ color:#fff !important; } main .request_guide td p{ color:#e6eaf7 !important; }
 main p.textalign-right{ color:#aab2d4 !important; }
-main .outline .outline_btnWrap a.btn_register, footer .btn_register{ background-color:#8B9BDB !important; color:#10163A !important; }
+main .outline .outline_btnWrap a.btn_register, footer .btn_register{ background-color:#22D3EE !important; color:#042530 !important; }
 
 body.anim-on section:not(.rv-in){ opacity:0; transform:translateY(22px); }
 body.anim-on section{ transition:opacity .7s ease, transform .7s ease; }

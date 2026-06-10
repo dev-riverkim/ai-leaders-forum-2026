@@ -369,3 +369,6 @@ main .add_calendar .btn_calendar:hover {background-color:#fff; color:#3e557b;}
 	.join_box_choice .agree_copy {position:relative; display:block; right:0; top:-5px;} 
 	.join_box_choice label i {top:auto; bottom:10px;}
 }
+/* === 한국어 줄바꿈: 어절 단위 유지(단어 중간 끊김 방지) — 전 버전 공통 === */
+body,h1,h2,h3,h4,p,li,td,th,strong,b,article,em,
+.h3_sub article,.topic,.spk,.cdesc,.cpos,.desc,.subcopy,.subcopy2{ word-break:keep-all; overflow-wrap:break-word; }
