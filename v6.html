@@ -121,10 +121,11 @@ main .program .program_table td:last-child{ font-size:13.5px; }
 header{ position:relative; }
 header .info.info-chips{ display:flex; justify-content:center; align-items:stretch; gap:12px; flex-wrap:wrap; }
 header .info-chips .chip{ display:flex; align-items:center; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.18); border-radius:10px; padding:12px 18px; font-size:15px; font-weight:500; color:#fff; text-shadow:0 1px 6px rgba(0,0,0,.45); }
-header .info-chips .chip-qr{ gap:10px; padding:8px 14px; }
-header .info-chips .chip-qr img{ width:54px; height:54px; background:#fff; padding:3px; border-radius:5px; box-sizing:border-box; display:block; }
-header .info-chips .chip-qr b{ font-size:12.5px; color:#dfe4f5; text-align:left; line-height:1.4; font-weight:600; }
-@media(max-width:600px){ header .info-chips .chip-qr{ display:none; } }
+header .hero-qr-row{ display:flex; justify-content:center; margin-top:14px; }
+header .hero-qr-row .chip-qr{ display:flex; align-items:center; gap:16px; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.18); border-radius:12px; padding:12px 22px; }
+header .hero-qr-row .chip-qr img{ width:112px; height:112px; background:#fff; padding:5px; border-radius:8px; box-sizing:border-box; display:block; }
+header .hero-qr-row .chip-qr b{ font-size:15px; color:#eef1fb; text-align:left; line-height:1.5; font-weight:600; text-shadow:0 1px 6px rgba(0,0,0,.45); }
+@media(max-width:600px){ header .hero-qr-row{ display:none; } }
 /* 하단 QR 강화 (포스터·공유용) */
 .qr-block img{ width:160px !important; height:160px !important; }
 </style>
@@ -149,7 +150,9 @@ header .info-chips .chip-qr b{ font-size:12.5px; color:#dfe4f5; text-align:left;
     <div class="info info-chips">
       <span class="chip">2026년 6월 25일(목) 10:00 ~ 18:00</span>
       <span class="chip">엘타워 8층 엘하우스홀 (서울 서초구 강남대로)</span>
-      <span class="chip chip-qr" aria-hidden="true"><img src="qr.png" alt=""><b>QR 스캔으로<br>바로 접속</b></span>
+    </div>
+    <div class="hero-qr-row" aria-hidden="true">
+      <span class="chip chip-qr"><img src="qr.png" alt=""><b>QR 스캔으로<br>바로 접속</b></span>
     </div>
   </div>
 </header>
