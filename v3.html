@@ -30,6 +30,27 @@
 
   /* 강사 사진: 원형 프레임(140x140)에 종횡비 무관하게 꽉 차도록 통일 */
   main .teacher .thumb_teacher > span img{ width:100% !important; height:100% !important; object-fit:cover; object-position:center top; display:block; }
+
+  /* 강사 그리드·이름·직책 가운데 정렬 (행 전체 중앙 정렬) */
+  main .teacher .list_teacher{ text-align:center; }
+  main .teacher .thumb_teacher{ text-align:center; }
+  main .teacher .thumb_teacher > strong,
+  main .teacher .thumb_teacher > p{ text-align:center; width:100%; }
+
+  /* 포럼 추진위원회 */
+  main .committee{ padding:60px 0; }
+  main .committee .cgrid{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px; max-width:1000px; margin:0 auto; }
+  @media(max-width:820px){ main .committee .cgrid{ grid-template-columns:repeat(2,1fr); } }
+  @media(max-width:520px){ main .committee .cgrid{ grid-template-columns:1fr; } }
+  main .committee .ccard{ background:#fff; border:1px solid #e5e5e5; border-radius:12px; padding:26px 18px 22px; text-align:center; }
+  main .committee .ccard .cph{ width:96px; height:96px; border-radius:50%; margin:0 auto 14px; overflow:hidden; box-shadow:0 0 0 1px #e5e5e5; }
+  main .committee .ccard .cph img{ width:100%; height:100%; object-fit:cover; object-position:center top; display:block; }
+  main .committee .ccard .cph.ph-init{ display:flex; align-items:center; justify-content:center; background:#212E6E; color:#fff; font-size:34px; font-weight:700; box-shadow:none; }
+  main .committee .ccard .role{ display:inline-block; font-size:12px; font-weight:700; color:#fff; background:#212E6E; border-radius:4px; padding:3px 10px; }
+  main .committee .ccard .cnm{ font-size:18px; font-weight:700; color:#222; margin-top:10px; }
+  main .committee .ccard .cnm .gi{ font-size:12px; font-weight:500; color:#d41d5d; margin-left:6px; }
+  main .committee .ccard .cpos{ font-size:13.5px; color:#777; margin-top:4px; }
+  main .committee .ccard .cdesc{ font-size:13px; color:#555; line-height:1.6; margin-top:10px; }
 </style>
 </head>
 <body>
@@ -222,6 +243,28 @@
         <div id="lecturer9_btn" class="thumb_teacher"><span><img src="images/jeontaejun.jpg" width="130"></span><strong>전태준</strong><p>바이오컴 대표</p></div>
         <div id="record9_modal" class="modal"><div class="modalWrap"><span class="close" title="닫기">&times;</span><div class="modal-content"><p><b>[CAIO 리더스] AI 네이티브 조직 전환의 과정 및 이슈 : 스타트업 사례</b><br>바이오컴 대표 · KAIST CAIO 과정 대상<br><br>AI를 도입한 회사는 많지만 성과를 매출·비용으로 증명하는 회사는 드뭅니다. AI가 안전하고 측정 가능하게 일하도록 만드는 운영 체계를 다루며, 인당 생산성을 끌어올리는 방법과 자산이 되는 에이전트의 차이를 직접 운영·검증한 경험으로 제시합니다.</p></div></div></div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- 포럼 추진위원회 -->
+  <section class="committee">
+    <div class="wrap">
+      <h3>포럼 추진위원회</h3>
+      <div class="cgrid">
+        <div class="ccard"><div class="cph"><img src="images/comm_jangdongin.jpg" alt="장동인"></div><span class="role">총괄자문</span><div class="cnm">장동인</div><div class="cpos">KAIST 김재철AI대학원 · 책임교수</div><div class="cdesc">CAIO 과정을 담당하며, 7년째 CEO를 위한 AI 코딩 교육을 진행하고 있습니다.</div></div>
+        <div class="ccard"><div class="cph"><img src="images/comm_kimyoungju.jpg" alt="김영주"></div><span class="role">고문</span><div class="cnm">김영주<span class="gi">CAIO 5기</span></div><div class="cpos">(주)시스원 · 대표이사</div><div class="cdesc">AX 및 인프라 구축·유지보수, 솔루션을 제공하는 기업을 이끌고 있습니다.</div></div>
+        <div class="ccard"><div class="cph"><img src="images/comm_joeuna.jpg" alt="조은아"></div><span class="role">추진위원장</span><div class="cnm">조은아<span class="gi">CAIO 5기</span></div><div class="cpos">추계예술대학교 문화예술경영대학원 · 교수</div><div class="cdesc">문화정책과 예술기관 운영을 연구·자문해 왔으며, 문화예술 버티컬 AI 프로젝트 기획에 참여하고 있습니다.</div></div>
+        <div class="ccard"><div class="cph"><img src="images/comm_nammin.jpg" alt="남민웅"></div><span class="role">부위원장</span><div class="cnm">남민웅<span class="gi">CAIO 5기</span></div><div class="cpos">오케스트로 · 전무</div><div class="cdesc">금융사업본부를 담당하며 소버린 AI 클라우드 데이터센터 사업을 지원합니다.</div></div>
+        <div class="ccard"><div class="cph"><img src="images/comm_parkjongmin.jpg" alt="박종민"></div><span class="role">부위원장</span><div class="cnm">박종민<span class="gi">CAIO 6기</span></div><div class="cpos">HDC랩스 · 연구소장</div><div class="cdesc">스마트홈과 빌딩을 연결하는 플랫폼을 만들고 AIoT 전략을 이끕니다.</div></div>
+        <div class="ccard"><div class="cph"><img src="images/comm_leewongeun.jpg" alt="이원근"></div><span class="role">부위원장</span><div class="cnm">이원근<span class="gi">CAIO 6기</span></div><div class="cpos">(주)모빅랩 · 대표이사</div><div class="cdesc">스마트 팩토리 분야의 설비 고장 진단 AI 솔루션을 제공하고 있습니다.</div></div>
+        <div class="ccard"><div class="cph"><img src="images/comm_kimjihye.jpg" alt="김지혜"></div><span class="role">부위원장</span><div class="cnm">김지혜<span class="gi">CAIO 9기</span></div><div class="cpos">럭셔리게이트웨이 · 대표</div><div class="cdesc">럭셔리 브랜드의 글로벌 시장 진입 전략을 전문으로 합니다.</div></div>
+        <div class="ccard"><div class="cph ph-init">김</div><span class="role">이사</span><div class="cnm">김일훈<span class="gi">CAIO 7기</span></div><div class="cpos">한울회계법인 · 공인회계사</div></div>
+        <div class="ccard"><div class="cph"><img src="images/comm_jeongmingi.jpg" alt="정민기"></div><span class="role">이사</span><div class="cnm">정민기<span class="gi">CAIO 8기</span></div><div class="cpos">재정경제부 부총리실 · 인공지능자문관</div><div class="cdesc">부처 내 행정혁신 과제 발굴과 AI 기반 업무전환 전략 자문을 수행합니다.</div></div>
+        <div class="ccard"><div class="cph ph-init">정</div><span class="role">특별위원장</span><div class="cnm">정정모<span class="gi">CAIO 6기</span></div><div class="cpos">리눅스데이타시스템 · 대표이사</div></div>
+        <div class="ccard"><div class="cph ph-init">최</div><span class="role">특별위원장</span><div class="cnm">최종수<span class="gi">CAIO 7기</span></div><div class="cpos">삼성서울병원 · 디지털혁신추진단 CTO</div></div>
+        <div class="ccard"><div class="cph ph-init">유</div><span class="role">특별위원장</span><div class="cnm">유응준<span class="gi">CAIO 8기</span></div><div class="cpos">JOON AI 컨설팅 · 대표이사</div></div>
+        <div class="ccard"><div class="cph ph-init">김</div><span class="role">특별위원장</span><div class="cnm">김재관<span class="gi">CAIO 9기</span></div><div class="cpos">KB국민카드 · 대표이사</div></div>
       </div>
     </div>
   </section>
