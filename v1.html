@@ -114,7 +114,7 @@ header .hero-qr-row .chip-qr b{ font-size:15px; color:#eef1fb; text-align:left; 
       <span class="chip">엘타워 8층 엘하우스홀 (서울 서초구 강남대로)</span>
     </div>
     <div class="hero-qr-row" aria-hidden="true">
-      <span class="chip chip-qr"><img src="qr.png" alt=""><b>QR 스캔으로<br>바로 접속</b></span>
+      <span class="chip chip-qr"><img src="qr.png" alt=""><b>QR 스캔으로<br>바로 사전등록</b></span>
     </div>
   </div>
 </header>
@@ -355,7 +355,7 @@ header .hero-qr-row .chip-qr b{ font-size:15px; color:#eef1fb; text-align:left; 
 
       <div class="qr-block">
         <img src="qr.png" alt="사전등록 QR코드">
-        <p><b>모바일로 보기 · 공유</b><br>QR코드를 스캔하면 포럼 안내 페이지로<br>바로 접속할 수 있습니다.</p>
+        <p><b>모바일 사전등록</b><br>QR코드를 스캔하면 사전등록 페이지로<br>바로 연결됩니다.</p>
       </div>
     </div>
   </section>
@@ -375,7 +375,7 @@ header .hero-qr-row .chip-qr b{ font-size:15px; color:#eef1fb; text-align:left; 
     $(".js-register").on("click", function(e){
       e.preventDefault();
       if(REGISTER_URL){ window.open(REGISTER_URL, "_blank"); }
-      else { alert("사전등록 링크는 준비 중입니다. 곧 오픈됩니다."); }
+      else { window.open("register.html", "_blank"); }
     });
 
     // 강사 모달
